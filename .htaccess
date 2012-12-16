@@ -1,0 +1,12 @@
+RedirectMatch 301 ^/ug2k5(.*)$ http://ug2k5.saini.co.in/
+RedirectMatch 301 /resume(.*) http://www.linkedin.com/in/kulbirsaini
+RedirectMatch 301 /(feed|forum|user|comment|guest-book)(.*) http://saini.co.in/
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{HTTP_HOST} .*life.saini.co.in [NC]
+  RewriteRule ^(.*)$ http://life.kulbirsaini.com/$1 [L,R=301]
+
+  RewriteCond %{HTTP_HOST} .*.saini.co.in [NC]
+  RewriteRule ^(.*)$ http://saini.co.in/$1 [L,R=301]
+</IfModule>
