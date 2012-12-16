@@ -1,6 +1,7 @@
 RedirectMatch 301 ^/ug2k5(.*)$ http://ug2k5.saini.co.in/
 RedirectMatch 301 /resume(.*) http://www.linkedin.com/in/kulbirsaini
 RedirectMatch 301 /(feed|forum|user|comment|guest-book)(.*) http://saini.co.in/
+ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine on
