@@ -1,92 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kulbir Saini | Author, Hacker, Web Developer, Entrepreneur</title>
+    <title>Kulbir Saini | Author, Hacker, Entrepreneur</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
     <meta content='Kulbir Saini' name='author' />
-    <meta content='I am Kulbir Saini, a hacker, writer and entrepreneur based in Hyderabad, India. I love Open Source and Fedora  is my favorite operating system. In programming languages, I used to love Python but now I am totally in love with Ruby. I am a Ruby on Rails developer since a year and a half.' name='description' />
-    <meta content="Kulbir, Saini, Kulbir Saini, Squid Book, Author, Hacker, Entrepreneur, IIIT, IIIT-H, IIIT Hyderabad, KulbirSaini, Squid Proxy Server, Videocache, Cache Videos" name="keywords" />
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <meta content="I am Kulbir Saini, a hacker, writer and entrepreneur based in Hyderabad, India. I used to love Python but now it's an ongoing war between Ruby and Python. I have been working with Ruby on Rails for more than five years now." name='description' />
+    <meta content="Kulbir, Saini, Kulbir Saini, Squid Book, Author, Hacker, Entrepreneur, IIIT, IIIT-H, IIIT Hyderabad, Squid Proxy Server, Videocache, Cache Videos" name="keywords" />
     <style type="text/css">
-      html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,em,img,strike,strong,sub,sup,ol,ul,li,label{margin:0 auto;padding:0 auto;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+      html,body,div,span,p,a,img,strong{margin:0 auto;padding:0;border:0;outline:0;vertical-align:baseline;}
       body{line-height:1;color:black;background:white;}
-      ol,ul{list-style:none;}
       a img{border:none;}
-      body{font-family:'Ubuntu',arial,sans-serif;text-align:center;font-weight:light;font-size:16px;color:#111111;}
+      body{font-family:'Ubuntu',arial,sans-serif;text-align:center;font-size:16px;color:#111;}
       strong{font-weight:bold;}
-      em{font-style:italic;}
       p{line-height:1.5em;text-align:justify;margin-bottom:20px;}
-      a{color:#aa0000;text-decoration:none;}
-      a:hover {border-bottom:solid 2px #aa0000;}
+      p.copyright{margin-bottom:10px;}
+      a{color:#a00;text-decoration:none;}
+      a:hover {border-bottom:2px solid #a00;}
       .clear{clear:both;}
-      #topborder{height:14px;top:0;width:100%;overflow:hidden;}
-      #topborder div{-moz-box-shadow:0 0 2px #111111;background:none repeat scroll 0 0 #111111;height:4px;}
-      #photo .profile-picture{box-shadow:0px 1px 4px #666666;-webkit-box-shadow:0px 1px 4px #666666;-moz-box-shadow:0px 1px 4px #666666;-webkit-transform:rotate(2deg);-moz-transform:rotate(2deg);border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;background-color:white;margin:40px 0px 30px 0px;padding:10px 10px 30px;clear:both;}
+      hr.border{border:2px solid #a00;margin:0px;color:#a00;background:#a00;}
+      hr.bottom{position:fixed;bottom:0px;width:100%;}
+      .picture{-webkit-box-shadow:0px 1px 4px #666;-moz-box-shadow:0px 1px 4px #666;box-shadow:0px 1px 4px #666;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background-color:white;margin:30px 0px 30px 0px;padding:10px 10px 30px;clear:both;}
       #content{width:850px;}
-      #content #aboutme{font-size:22px;}
-      #content #online{padding:40px 0px 40px 0px;}
-      .left{float:left;}
-      #online a{-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;margin-right:5px;border:1px solid;position:relative;font-size:13px;box-shadow:0px 1px 4px #666666;-webkit-box-shadow:0px 1px 4px #666666;-moz-box-shadow:0px 1px 4px #666666;text-shadow:0 0 2px #666666;padding:10px 0px;color:white;}
+      #aboutme{font-size:22px;}
+      #online{padding:40px 0px 40px 0px;}
+      #online a{-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;margin-right:5px;border:1px solid;position:relative;font-size:13px;-webkit-box-shadow:0px 1px 4px #666;-moz-box-shadow:0px 1px 4px #666;box-shadow:0px 1px 4px #666;text-shadow:0 0 2px #666;padding:10px 0px;color:white;}
       #online a:active{top:4px;}
       #online a span{padding:2px 11px 2px 35px;}
       #online a.linkedin{background-color:#4E9CC3;border-color:#4E9CC3;}
-      #online a.github{background-color:#444444;border-color:#444444;}
+      #online a.github{background-color:#444;border-color:#444;}
       #online a.twitter{background-color:#77CBFC;border-color:#77CBFC;}
-      #online a.facebook{background-color:#3B5A98;border-color:#3B5A98;}
-      #online a.gofedora{background-color:#BB3333;border-color:#BB3333;}
-      #online a.blog{background-color:#68B7C0;border-color:#68B7C0;}
-      #online a.email{background-color:#00AA00;border-color:#00AA00;}
+      #online a.gofedora{background-color:#B33;border-color:#B33;}
+      #online a.email{background-color:#0A0;border-color:#0A0;}
       #online a.linkedin span{background:url("images/icons.png") no-repeat scroll 10px -35px transparent;}
       #online a.github span{background:url("images/icons.png") no-repeat scroll 10px -89px transparent;}
       #online a.twitter span{background:url("images/icons.png") no-repeat scroll 10px -17px transparent;}
-      #online a.facebook span{background:url("images/icons.png") no-repeat scroll 10px -53px transparent;}
       #online a.gofedora span{background:url("images/icons.png") no-repeat scroll 10px -71px transparent;}
-      #online a.blog span{background:url("images/icons.png") no-repeat scroll 10px -71px transparent;}
       #online a.email span{background:url("images/icons.png") no-repeat scroll 10px 1px transparent;}
-      #footer{padding:40px 0px 0px 0px;}
+      #footer{padding-top:10px;}
       #footer p{text-align:center;}
       #footer p.credits{font-size:10px;}
     </style>
   </head>
   <body>
-    <div id="topborder"><div></div></div>
+    <hr class="border" />
     <div id="content">
-      <div id="header">
-      </div>
-      <div class="clear"></div>
-
-      <div id="photo">
-        <img class="profile-picture" src="images/kulbir-saini-7.jpg" alt="Kulbir Saini" />
+      <div>
+        <img class="picture" src="images/kulbir-saini-7.png" alt="Kulbir Saini" />
       </div>
       <div class="clear"></div>
 
       <div id="aboutme">
-        <p>Hello! I'm <strong>Kulbir Saini,</strong> a hacker, writer and entrepreneur based in Hyderabad, India. I love <strong>Open Source</strong> and <strong>Fedora</strong> is my favorite operating system. In programming languages, I used to love <strong>Python</strong> but now I am totally in love with <strong>Ruby</strong>. I am a <strong>Ruby on Rails</strong> developer since a year and a half.</p>
-        <p>I founded <a href="http://whitemag.net/" target="_blank">White Magnet Software Pvt Ltd.</a>, wrote a book on <a href="http://link.packtpub.com/XfcxIK" rel="nofollow" target="_blank">Squid Proxy Server</a>, created <a href="http://cachevideos.com/" target="_blank">Videocache</a> (<strong>Caches Videos Using Squid</strong>) and <a href="http://gofedora.com/archives/category/intelligentmirror/" rel="nofollow" target="_blank">Intelligent Mirror</a> (as a part of <strong>Google Summer of Code, 2008</strong>). I was a <strong>System Administrator</strong> at my university for a year and a half. I was also a part of a three member team which <a href="http://iiit.ac.in/" rel="nofollow" target="_blank">redesigned the university website</a>.</p>
+        <p>Hello! I'm <strong>Kulbir Saini,</strong> a hacker, writer and entrepreneur based in Hyderabad, India. I worked with <strong>Python</strong> for almost 7 years and have been working with <strong>Ruby on Rails</strong> for more than 5 years now.</p>
+        <p>I founded <a href="http://whitemag.net/" target="_blank">White Magnet</a> &amp; sold it, wrote a book on <a href="http://link.packtpub.com/XfcxIK" rel="nofollow" target="_blank">Squid Proxy Server</a>, created <a href="http://cachevideos.com/" target="_blank">Videocache</a> (<strong>Squid Plugin</strong>) and <a href="http://gofedora.com/archives/category/intelligentmirror/" rel="nofollow" target="_blank">Intelligent Mirror</a> (<strong>Squid Plugin</strong>, as a part of <strong>Google Summer of Code, 2008</strong>). I was <strong>System Administrator</strong> at my university for a year and a half. I was also a part of a three member web team which <a href="http://iiit.ac.in/" rel="nofollow" target="_blank">redesigned the university website</a>. These days I am making a living freelancing and currently looking for additional work.</p>
       </div>
       <div class="clear"></div>
 
       <div id="online">
-        <label class="left">Internetz</label>
         <a href="http://in.linkedin.com/in/kulbirsaini" target="_blank" rel="nofollow" class="linkedin"><span>LinkedIn</span></a>
         <a href="https://github.com/kulbirsaini" target="_blank" rel="nofollow" class="github"><span>GitHub</span></a>
         <a href="http://twitter.com/_kulbir" target="_blank" rel="nofollow" class="twitter"><span>Twitter</span></a>
-        <!--a href="http://www.facebook.com/kulbirsaini" target="_blank" rel="nofollow" class="facebook"><span>Facebook</span></a-->
         <a href="http://gofedora.com/" target="_blank" rel="nofollow" class="gofedora"><span>GoFedora</span></a>
-        <a href="http://life.kulbirsaini.com/" target="_blank" rel="nofollow" class="blog"><span>Blog</span></a>
         <a href="mailto:saini AT saini.co.in" target="_blank" rel="nofollow" class="email"><span>Email</span></a>
       </div>
       <div class="clear"></div>
 
       <div id="footer">
-        <p>&copy; 2006-2011 Kulbir Saini</p>
+        <p class="copyright"></p>
         <p class="credits">[ Inspired by <a href="http://macournoyer.com/" target="_blank" rel="nofollow">macournoyer.com</a> | <a href="https://github.com/kulbirsaini/Home-Page" target="_blank" rel="nofollow">Source Code</a> ]</p>
       </div>
       <div class="clear"></div>
     </div>
+    <hr class="border bottom" />
 
-    <div id="tracking">
     <script type="text/javascript">
+      window.onload = function(){ document.getElementsByClassName('copyright')[0].innerHTML = "&copy; 2005-" + (new Date()).getYear() + " Kulbir Saini"; };
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-27164299-4']);
       _gaq.push(['_trackPageview']);
@@ -96,6 +83,5 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    </div>
   </body>
 </html>
