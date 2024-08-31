@@ -1,14 +1,14 @@
-RedirectMatch 301 (?i)/ug2k5(.*)$ http://ug2k5.saini.co.in/
-RedirectMatch 301 (?i)/blog.* http://life.kulbirsaini.com/
-RedirectMatch 301 (?i)/(.*)resume(.*) http://www.linkedin.com/in/kulbirsaini
-RedirectMatch 301 (?i)/(feed|forum|user|comment|guest-book)(.*) http://saini.co.in/
+RedirectMatch 301 (?i)/ug2k5(.*)$ https://ug2k5.saini.co.in/
+RedirectMatch 301 (?i)/blog.* https://life.kulbirsaini.com/
+RedirectMatch 301 (?i)/(.*)resume(.*) https://www.linkedin.com/in/kulbirsaini
+RedirectMatch 301 (?i)/(feed|forum|user|comment|guest-book)(.*) https://saini.co.in/
 ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine on
   RewriteCond %{HTTP_HOST} .*life.saini.co.in [NC]
-  RewriteRule ^(.*)$ http://life.kulbirsaini.com/$1 [L,R=301]
+  RewriteRule ^(.*)$ https://life.kulbirsaini.com/$1 [L,R=301]
 
   RewriteCond %{HTTP_HOST} .*.saini.co.in [NC]
-  RewriteRule ^(.*)$ http://saini.co.in/$1 [L,R=301]
+  RewriteRule ^(.*)$ https://saini.co.in/$1 [L,R=301]
 </IfModule>
